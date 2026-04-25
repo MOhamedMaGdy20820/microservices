@@ -91,7 +91,7 @@
 				<version>3.3.2</version>
 				<configuration>
 					<to>
-						<image>MOhamedMaGdy20820/${project.artifactId}:s8</image>
+						<image>mohamedmagdy208/${project.artifactId}:s8</image>
 					</to>
 				</configuration>
 			</plugin>
