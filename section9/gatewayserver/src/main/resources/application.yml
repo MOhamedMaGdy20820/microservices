@@ -1,3 +1,5 @@
+server:
+  port: 8072
 spring:
   application:
     name: "gatewayserver"
@@ -33,4 +35,3 @@ logging:
     com:
       eazybytes:
         gatewayserver: DEBUG
-
