@@ -1,3 +1,5 @@
+server:
+  port: 8072
 spring:
   application:
     name: "gatewayserver"
@@ -50,4 +52,9 @@ resilience4j.circuitbreaker:
       permittedNumberOfCallsInHalfOpenState: 2
       failureRateThreshold: 50
       waitDurationInOpenState: 10000
+      minimumNumberOfCalls: 5
+
+  instances:
+    accountsCircuitBreaker:
+      baseConfig: default
 

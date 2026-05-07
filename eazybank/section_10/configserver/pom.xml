@@ -56,7 +56,7 @@
 				<version>3.3.2</version>
 				<configuration>
 					<to>
-						<image>eazybytes/${project.artifactId}:s10</image>
+						<image>mohamedmagdy208/${project.artifactId}:s10</image>
 					</to>
 				</configuration>
 			</plugin>

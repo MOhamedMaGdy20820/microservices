@@ -77,6 +77,11 @@ resilience4j.circuitbreaker:
       permittedNumberOfCallsInHalfOpenState: 2
       failureRateThreshold: 50
       waitDurationInOpenState: 10000
+      minimumNumberOfCalls: 5
+
+  instances:
+    accountsCircuitBreaker:
+      baseConfig: default
 
 resilience4j.retry:
   configs:
