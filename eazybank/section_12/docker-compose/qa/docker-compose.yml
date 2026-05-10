@@ -212,7 +212,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "eazybytes/configserver:s12"
+    image: "mohamedmagdy208/configserver:s12"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -229,7 +229,7 @@ services:
       OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "eazybytes/eurekaserver:s12"
+    image: "mohamedmagdy208/eurekaserver:s12"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -247,7 +247,7 @@ services:
       OTEL_SERVICE_NAME: "eurekaserver"
 
   accounts:
-    image: "eazybytes/accounts:s12"
+    image: "mohamedmagdy208/accounts:s12"
     container_name: accounts-ms
     healthcheck:
       test: "curl --fail --silent localhost:8080/actuator/health/readiness | grep UP || exit 1"
@@ -263,7 +263,7 @@ services:
       service: microservice-eureka-config
 
   loans:
-    image: "eazybytes/loans:s12"
+    image: "mohamedmagdy208/loans:s12"
     container_name: loans-ms
     healthcheck:
       test: "curl --fail --silent localhost:8090/actuator/health/readiness | grep UP || exit 1"
@@ -279,7 +279,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "eazybytes/cards:s12"
+    image: "mohamedmagdy208/cards:s12"
     container_name: cards-ms
     healthcheck:
       test: "curl --fail --silent localhost:9000/actuator/health/readiness | grep UP || exit 1"
@@ -295,7 +295,7 @@ services:
       service: microservice-eureka-config
 
   gatewayserver:
-    image: "eazybytes/gatewayserver:s12"
+    image: "mohamedmagdy208/gatewayserver:s12"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"
