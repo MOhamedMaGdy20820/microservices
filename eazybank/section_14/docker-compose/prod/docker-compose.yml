@@ -136,7 +136,7 @@ services:
       service: network-deploy-service
 
   tempo:
-    image: grafana/tempo
+    image: grafana/tempo:1.5.0
     container_name: tempo
     command: -config.file /etc/tempo-config.yml
     ports:
