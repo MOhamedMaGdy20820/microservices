@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: configserver
-        image: eazybytes/configserver:s12
+        image: mohamedmagdy208/configserver:s12
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8071
 ---

@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: eurekaserver
-        image: eazybytes/eurekaserver:s12
+        image: mohamedmagdy208/eurekaserver:s12
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8070
         env:
