@@ -9,7 +9,7 @@ appName: accounts
 replicaCount: 2
 
 image:
-  repository: eazybytes/accounts
+  repository: mohamedmagdy208/accounts
   tag: s17
 
 containerPort: 8080

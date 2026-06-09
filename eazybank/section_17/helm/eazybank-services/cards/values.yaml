@@ -9,7 +9,7 @@ appName: cards
 replicaCount: 1
 
 image:
-  repository: eazybytes/cards
+  repository: mohamedmagdy208/cards
   tag: s17
 
 containerPort: 9000

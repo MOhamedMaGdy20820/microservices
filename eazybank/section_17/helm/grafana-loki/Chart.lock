@@ -1,18 +1,6 @@
 dependencies:
-- name: memcached
-  repository: oci://registry-1.docker.io/bitnamicharts
-  version: 6.6.0
-- name: memcached
-  repository: oci://registry-1.docker.io/bitnamicharts
-  version: 6.6.0
-- name: memcached
-  repository: oci://registry-1.docker.io/bitnamicharts
-  version: 6.6.0
-- name: memcached
-  repository: oci://registry-1.docker.io/bitnamicharts
-  version: 6.6.0
-- name: common
-  repository: oci://registry-1.docker.io/bitnamicharts
-  version: 2.9.0
-digest: sha256:1f684708ff56ddbc023a07f4ee4eb5ae2ed599997c2dddc4e3ff94da4005f0c5
-generated: "2023-08-23T09:06:31.159655+02:00"
+- name: loki
+  repository: https://grafana.github.io/helm-charts
+  version: 6.42.0
+digest: sha256:c5493e0be3001f55001e3c506006c5b936f474cf39232665f00d8804e89e31ee
+generated: "2025-10-06T20:18:03.613731+05:30"
