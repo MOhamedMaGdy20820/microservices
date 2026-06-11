@@ -56,7 +56,8 @@ public class GatewayserverApplication {
 	public Customizer<ReactiveResilience4JCircuitBreakerFactory> defaultCustomizer() {
 		return factory -> factory.configureDefault(id -> new Resilience4JConfigBuilder(id)
 				.circuitBreakerConfig(CircuitBreakerConfig.ofDefaults())
-				.timeLimiterConfig(TimeLimiterConfig.custom().timeoutDuration(Duration.ofSeconds(4)).build()).build());
+				.timeLimiterConfig(TimeLimiterConfig.custom().timeoutDuration(Duration.ofSeconds(10))
+						.build()).build());
 	}
 
 	@Bean
@@ -69,7 +70,5 @@ public class GatewayserverApplication {
 		return exchange -> Mono.justOrEmpty(exchange.getRequest().getHeaders().getFirst("user"))
 				.defaultIfEmpty("anonymous");
 	}
-
-//	docker run -p 6379:6379 --name eazyredis -d redis
 
 }
