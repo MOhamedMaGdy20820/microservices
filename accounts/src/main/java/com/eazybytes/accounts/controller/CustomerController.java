@@ -1,8 +1,8 @@
 package com.eazybytes.accounts.controller;
 
 import com.eazybytes.accounts.dto.CustomerDetailsDto;
-import com.eazybytes.accounts.dto.ErrorResponseDto;
 import com.eazybytes.accounts.service.ICustomersService;
+import com.eazybytes.common.dto.ErrorResponseDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -10,7 +10,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.constraints.Pattern;
-import org.apache.hc.core5.http.HttpStatus;
+import org.apache.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
