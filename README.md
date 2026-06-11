@@ -1,4 +1,4 @@
-# 🏦 EazyBank:Microservices Architecture (Phase 1)
+# 🏦 EazyBank:Microservices Architecture
 
 [![Java Version](https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=openjdk)](https://openjdk.org/)
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.1.3-green?style=for-the-badge&logo=springboot)](https://spring.io/projects/spring-boot)
